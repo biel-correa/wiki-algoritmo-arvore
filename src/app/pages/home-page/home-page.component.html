@@ -1,7 +1,7 @@
 <div class="container">
   <app-section title="Algoritmos">
     <div class="d-flex flex-wrap">
-      <app-algorithm-card></app-algorithm-card>
+      <app-algorithm-card *ngFor="let item of algorithms" [algorithm]="item"></app-algorithm-card>
     </div>
   </app-section>
 </div>

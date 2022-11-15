@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import {NavbarComponent} from "@components/navbar/navbar.component";
 import { SectionComponent } from '@components/section/section.component';
 import { AlgorithmCardComponent } from './algorithm-card/algorithm-card.component';
+import {RouterModule} from "@angular/router";
 
 const components = [
   NavbarComponent,
@@ -14,7 +15,8 @@ const components = [
   declarations: [...components],
   exports: [...components],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ]
 })
 export class ComponentsModule { }
