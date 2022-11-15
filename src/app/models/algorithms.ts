@@ -4,21 +4,21 @@ export const ALGORITHMS: AlgorithmModel[] = [
   {
     title: 'Árvore B',
     description: 'Árvore B é uma árvore de busca balanceada que mantém seus dados ordenados e permite buscas, inserções e remoções eficientes.',
-    route: 'b-tree'
+    route: '/b-tree'
   },
   {
     title: 'Árvore B+',
     description: 'Árvore B+ é uma árvore de busca balanceada que mantém seus dados ordenados e permite buscas, inserções e remoções eficientes.',
-    route: 'b-plus-tree'
+    route: '/b-plus-tree'
   },
   {
     title: 'Árvore B*',
     description: 'Árvore B* é uma árvore de busca balanceada que mantém seus dados ordenados e permite buscas, inserções e remoções eficientes.',
-    route: 'b-star-tree'
+    route: '/b-star-tree'
   },
   {
     title: 'Árvore Vermelho e Preto',
     description: 'Árvore Vermelho e Preto é uma árvore de busca balanceada que mantém seus dados ordenados e permite buscas, inserções e remoções eficientes.',
-    route: 'red-black-tree'
+    route: '/red-black-tree'
   }
 ]
