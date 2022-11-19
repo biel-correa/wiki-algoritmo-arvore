@@ -4,9 +4,12 @@
     <p>{{algorithm?.description}}</p>
   </app-section>
   <app-section title="Utilização">
-    <p>{{algorithm?.description}}</p>
+    <p>{{algorithm?.utilization}}</p>
   </app-section>
   <app-section title="Demostração">
-    <p>{{algorithm?.description}}</p>
+    <div class="video" [innerHTML]="getVideo()" *ngIf="algorithm?.video; else noVideo"></div>
+    <ng-template #noVideo>
+      <p>Não há vídeo demonstrativo para está árvore.</p>
+    </ng-template>
   </app-section>
 </div>

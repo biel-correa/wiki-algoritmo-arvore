@@ -3,6 +3,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { ALGORITHMS } from '@app/models/algorithms';
 import { tap } from 'rxjs';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
   templateUrl: './view-tree-page.component.html',
@@ -13,10 +14,17 @@ export class ViewTreePageComponent implements OnInit {
   private id: number;
   algorithm: AlgorithmModel | undefined;
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(
+    private route: ActivatedRoute,
+    private _sanitizer: DomSanitizer
+  ) {}
 
   ngOnInit(): void {
     this.getAlgorithmById();
+  }
+
+  getVideo(): SafeHtml {
+    return this._sanitizer.bypassSecurityTrustHtml(this.algorithm?.video || '');
   }
 
   getAlgorithmById() {

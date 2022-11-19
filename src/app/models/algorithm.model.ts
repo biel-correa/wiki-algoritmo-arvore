@@ -3,5 +3,5 @@ export default class AlgorithmModel {
   title: string;
   description: string;
   utilization: string;
-  videoUrl?: string;
+  video?: string;
 }
