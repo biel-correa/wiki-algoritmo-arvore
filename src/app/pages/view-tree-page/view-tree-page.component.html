@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container mb-2">
   <h1 class="mt-2">{{algorithm?.title}}</h1>
   <app-section title="Descrição">
     <p>{{algorithm?.description}}</p>
@@ -7,7 +7,7 @@
     <p>{{algorithm?.utilization}}</p>
   </app-section>
   <app-section title="Demostração">
-    <div class="video" [innerHTML]="getVideo()" *ngIf="algorithm?.video; else noVideo"></div>
+    <div class="video text-center" [innerHTML]="getVideo()" *ngIf="algorithm?.video; else noVideo"></div>
     <ng-template #noVideo>
       <p>Não há vídeo demonstrativo para está árvore.</p>
     </ng-template>
