@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BPlusTreePageComponent } from './bplus-tree-page.component';
+import { ViewTreePageComponent } from './view-tree-page.component';
 
-describe('BPlusTreePageComponent', () => {
-  let component: BPlusTreePageComponent;
-  let fixture: ComponentFixture<BPlusTreePageComponent>;
+describe('ViewTreePageComponent', () => {
+  let component: ViewTreePageComponent;
+  let fixture: ComponentFixture<ViewTreePageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BPlusTreePageComponent ]
+      declarations: [ ViewTreePageComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(BPlusTreePageComponent);
+    fixture = TestBed.createComponent(ViewTreePageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

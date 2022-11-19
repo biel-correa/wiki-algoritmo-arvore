@@ -2,6 +2,6 @@
   <div class="card-body">
     <h5 class="card-title">{{algorithm.title}}</h5>
     <p class="card-text">{{algorithm.description}}</p>
-    <a [routerLink]="algorithm.route" class="btn btn-primary">Ver</a>
+    <a [routerLink]="['/tree', algorithm.id]" class="btn btn-primary">Ver</a>
   </div>
 </div>

@@ -3,27 +3,27 @@ import ROUTES from './routes.model';
 
 export const ALGORITHMS: AlgorithmModel[] = [
   {
+    id: 1,
     title: 'Árvore B',
     description:
       'Árvore B é uma árvore de busca balanceada que mantém seus dados ordenados e permite buscas, inserções e remoções eficientes.',
-    route: `/${ROUTES.B_TREE}`,
   },
   {
+    id: 2,
     title: 'Árvore B+',
     description:
       'Árvore B+ é uma árvore de busca balanceada que mantém seus dados ordenados e permite buscas, inserções e remoções eficientes.',
-    route: `/${ROUTES.B_PLUS_TREE}`,
   },
   {
+    id: 3,
     title: 'Árvore B*',
     description:
       'Árvore B* é uma árvore de busca balanceada que mantém seus dados ordenados e permite buscas, inserções e remoções eficientes.',
-    route: `/${ROUTES.B_STAR_TREE}`,
   },
   {
+    id: 4,
     title: 'Árvore Vermelho e Preto',
     description:
       'Árvore Vermelho e Preto é uma árvore de busca balanceada que mantém seus dados ordenados e permite buscas, inserções e remoções eficientes.',
-    route: `/${ROUTES.RED_BLACK_TREE}`,
   },
 ];
