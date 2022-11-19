@@ -1,5 +1,4 @@
 import AlgorithmModel from '@app/models/algorithm.model';
-import ROUTES from './routes.model';
 
 export const ALGORITHMS: AlgorithmModel[] = [
   {
