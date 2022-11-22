@@ -28,6 +28,8 @@ export const ALGORITHMS: AlgorithmModel[] = [
       'Árvore B* apresenta mecanismos de inserção, remoção e busca muito semelhantes aos realizados em árvores B, mas com a diferença em que a técnica de redistribuição de chaves também é empregada durante as operações de inserção.',
     utilization:
       'Segundo a definição de Knuth uma árvore B* de ordem m apresenta as seguintes propriedades: Cada página apresenta no máximo m páginas filhas. Uma página folha contém pelo menos ⌊(2m-1)/3⌋ chaves e no máximo m-1. Todas as páginas folha estão no mesmo nível.',
+    video:
+      '<iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;" src="https://www.youtube.com/embed/WXnTmuSZDfc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
   },
   {
     id: 4,
